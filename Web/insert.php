@@ -29,13 +29,6 @@
       <link rel="stylesheet" href="css/Home.css" />
       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
       <link rel="stylesheet" href="/resources/demos/style.css">
-      <nav>
-         <ul>
-            <li>
-               <a href="index2.php">Home</a>
-            </li>
-         </ul>
-      </nav>
       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script>
@@ -43,12 +36,19 @@
       $( "#datepicker" ).datepicker({maxDate: "0", dateFormat: "dd-mm-yy"});
       } );
       </script>
+      <nav>
+         <ul>
+            <li>
+               <a href="index2.php">Home</a>
+            </li>
+         </ul>
+      </nav>
    </head>
    <body>
       <div class="insertForm">
          <p><a href="dashboard.php">Dashboard</a> 
-            | <a href="view.php">View Records</a> 
-            | <a href="logout.php">Logout</a>
+             <a href="view.php">View Records</a> 
+             <a href="logout.php">Logout</a>
          </p>
          <div>
             <h1>Insert New Record</h1>

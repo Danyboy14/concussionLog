@@ -8,7 +8,7 @@
       <nav>
          <ul>
             <li>
-               <a href="index.php">Home</a>
+               <a href="index.html">Home</a>
             </li>
             <li>
                <a href="registration.php">Register</a>

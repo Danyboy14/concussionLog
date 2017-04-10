@@ -22,9 +22,9 @@
    <body>
       <div class="form">
          <p><a href="dashboard.php">Dashboard</a> 
-            | <a href="insert.php">Insert New Record</a>
-            | <a href="view.php">View Records</a>
-            | <a href="logout.php">Logout</a>
+             <a href="insert.php">Insert New Record</a>
+             <a href="view.php">View Records</a>
+             <a href="logout.php">Logout</a>
          </p>
          <h2>Search Results</h2>
           <form action="search.php" method="GET">
@@ -34,10 +34,9 @@
         <p> </p>
 <?php
     $query = $_GET['query']; 
-    // gets value sent over search form
+    // takes value from search form
      
     $min_length = 1;
-    // you can set minimum length of the query if you want
      
     if(strlen($query) >= $min_length){ // if query length is more or equal minimum length then
          

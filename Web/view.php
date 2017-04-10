@@ -20,8 +20,8 @@
    <body>
       <div class="form">
          <p><a href="dashboard.php">Dashboard</a> 
-            | <a href="insert.php">Insert New Record</a> 
-            | <a href="logout.php">Logout</a>
+             <a href="insert.php">Insert New Record</a> 
+             <a href="logout.php">Logout</a>
          </p>
          <h2>View Records</h2>
           <form action="search.php" method="GET">

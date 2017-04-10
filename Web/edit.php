@@ -22,6 +22,13 @@
       $( "#datepicker" ).datepicker({maxDate: "0", dateFormat: "dd-mm-yy"});
       } );
       </script>
+      <nav>
+         <ul>
+            <li>
+               <a href="index2.php">Home</a>
+            </li>
+         </ul>
+      </nav>
    </head>
    <body>
       <div class="insertForm">

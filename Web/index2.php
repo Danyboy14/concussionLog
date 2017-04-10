@@ -15,9 +15,6 @@
          <nav>
             <ul>
                <li>
-                  <a href="index2.php">Home</a>
-               </li>
-               <li>
                   <a href="dashboard.php">Dashboard</a>
                </li>
                <li>

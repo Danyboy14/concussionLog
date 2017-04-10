@@ -4,6 +4,6 @@
    if(session_destroy())
    {
    // Redirect To Home Page
-   header("Location: index.php");
+   header("Location: index.html");
    }
 ?>
