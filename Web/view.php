@@ -20,15 +20,15 @@
    <body>
       <div class="form">
          <p><a href="dashboard.php">Dashboard</a> 
-             <a href="insert.php">Insert New Record</a> 
-             <a href="logout.php">Logout</a>
+            <a href="insert.php">Insert New Record</a> 
+            <a href="logout.php">Logout</a>
          </p>
          <h2>View Records</h2>
-          <form action="search.php" method="GET">
-        <input type="text" name="query" placeholder="Enter query" required />
-        <input type="submit" value="Search" />
-        </form>
-        <p> </p>
+         <form action="search.php" method="GET">
+            <input type="text" name="query" placeholder="Enter query" required />
+            <input type="submit" value="Search" />
+         </form>
+         <p> </p>
          <table class='styledtable' align="center"; width=100%; border=1; style='border-collapse:collapse;'>
             <thead>
                <tr>
@@ -67,26 +67,30 @@
                      $concussion_date = strtotime($row["dateofconcussion"]);
                      $date_diff = $now_date - $concussion_date; 
                      $days = abs($date_diff / (60*60*24));
-                  if($row["age"] <= 20 AND $days <= 23): ?>
-                     <td align="center"> Not Eligible </td>
+                     if($row["age"] <= 20 AND $days <= 23): ?>
+                  <td align="center"> Not Eligible </td>
                   <?php elseif ($row["age"] > 20 AND $days <= 21): ?>
-                     <td align="center"> Not Eligible </td>
+                  <td align="center"> Not Eligible </td>
                   <?php elseif($row["age"] <= 20 AND $days > 23): ?>
-                     <td align="center"> Eligible </td>
+                  <td align="center"> Eligible </td>
                   <?php elseif($row["age"] > 20 AND $days > 21): ?>
-                     <td align="center"> Eligible </td>
+                  <td align="center"> Eligible </td>
                   <?php endif; ?>                  
                   <td align="center"><?php echo $row["submittedby"]; ?></td>
                   <?php if($_SESSION["username"] == $row["submittedby"]): ?>
-                     <td align="center">
-                        <a href="edit.php?id=<?php echo $row["id"]; ?>">Edit</a>
-                     </td>
-                     <td align="center">
-                        <a href="delete.php?id=<?php echo $row["id"]; ?>">Delete</a>
-                     </td>
+                  <td align="center">
+                     <a href="edit.php?id=<?php echo $row["id"]; ?>">Edit</a>
+                  </td>
+                  <td align="center">
+                     <a href="delete.php?id=<?php echo $row["id"]; ?>">Delete</a>
+                  </td>
                   <?php  else: ?>
-                     <td align="center"><p>-</p></td>
-                     <td align="center"><p>-</p></td>
+                  <td align="center">
+                     <p>-</p>
+                  </td>
+                  <td align="center">
+                     <p>-</p>
+                  </td>
                   <?php endif; ?>
                </tr>
                <?php $count++;} ?>

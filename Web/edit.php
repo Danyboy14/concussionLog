@@ -18,9 +18,9 @@
       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script>
-      $( function() {
-      $( "#datepicker" ).datepicker({maxDate: "0", dateFormat: "dd-mm-yy"});
-      } );
+         $( function() {
+         $( "#datepicker" ).datepicker({maxDate: "0", dateFormat: "dd-mm-yy"});
+         } );
       </script>
       <nav>
          <ul>
@@ -69,19 +69,23 @@
                   required value="<?php echo $row['name'];?>" /></p>
                <p>Age: <input type="text" name="age" placeholder="Enter Age" 
                   required value="<?php echo $row['age'];?>" /></p>
-               <p>Position: <select name="position" placeholder="Position">
-                <option value="<?php echo $row['position'];?>"><?php echo $row['position'];?></option>
-                <option value="Prop">Prop</option>
-                <option value="Hooker">Hooker</option>
-                <option value="Lock">Lock</option>
-                <option value="Flanker">Flanker</option>
-                <option value="Number 8">Number 8</option>
-                <option value="Scrumhalf">Scrumhalf</option>
-                <option value="Outhalf">Outhalf</option>
-                <option value="Winger">Winger</option>
-                <option value="Centre">Centre</option>
-                <option value="Fullback">Fullback</option> 
-                  required value="<?php echo $row['position'];?>" </select></p>
+               <p>
+                  Position: 
+                  <select name="position" placeholder="Position">
+                     <option value="<?php echo $row['position'];?>"><?php echo $row['position'];?></option>
+                     <option value="Prop">Prop</option>
+                     <option value="Hooker">Hooker</option>
+                     <option value="Lock">Lock</option>
+                     <option value="Flanker">Flanker</option>
+                     <option value="Number 8">Number 8</option>
+                     <option value="Scrumhalf">Scrumhalf</option>
+                     <option value="Outhalf">Outhalf</option>
+                     <option value="Winger">Winger</option>
+                     <option value="Centre">Centre</option>
+                     <option value="Fullback">Fullback</option>
+                     required value="<?php echo $row['position'];?>" 
+                  </select>
+               </p>
                <p>Club: <input type="text" name="club" placeholder="Enter Club" 
                   required value="<?php echo $row['club'];?>" /></p>
                <p>Date: <input type="text" name="dateofconcussion" id='datepicker' placeholder="Enter Date of Concussion" 

@@ -19,8 +19,9 @@
    <body>
       <?php
          require('db.php');
-         // If form submitted, insert values into the database.
          if (isset($_REQUEST['username'])){
+          if ($_REQUEST['email'] == $_REQUEST['emailconfirm'])
+          {
                  // removes backslashes
           $username = stripslashes($_REQUEST['username']);
                  //escapes special characters in a string
@@ -38,13 +39,22 @@
          <h3>You are registered successfully.</h3>
          <br/>Click here to <a href='login.php'>Login</a></div>";
                  }
-             }else{
-      ?>
+             }
+             elseif ($_REQUEST['email'] != $_REQUEST['emailconfirm']) 
+             {
+             echo "<div class='insertForm'>
+              <h3>The email address' you entered did not match</h3>
+         <br/>Click here to try again <a href='registration.php'>Register</a></div>";
+           }
+           }
+           else{
+         ?>
       <div class="insertForm">
          <h1>Registration</h1>
          <form name="registration" action="" method="post">
             <p>Username: <input type="text" name="username" placeholder="Username" required/></p>
             <p>Email Address: <input type="email" name="email" placeholder="Email" required /></p>
+            <p>Confirm Email Address: <input type="email" name="emailconfirm" placeholder="Confirm Email" required /></p>
             <p>Password: <input type="password" name="password" placeholder="Password" required /></p>
             <input type="submit" name="submit" value="Register" />
             <p>Already Registered? Login <a href="login.php">here</a></p>
