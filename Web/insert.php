@@ -3,6 +3,9 @@
    include("auth.php");
    $status = "";
    if(isset($_POST['new']) && $_POST['new']==1){
+      if ($_REQUEST['age'] <=20): ?>
+                  <script>confirm("Please make sure the player's coach has notified one of \ntheir parent's of this injury.");</script>
+                <?php endif;
        $trn_date = date("Y-m-d H:i:s");
        $name =$_REQUEST['name'];
        $age = $_REQUEST['age'];
