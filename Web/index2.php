@@ -4,7 +4,6 @@
 <html>
    <head>
       <title>Concussion Log</title>
-      <meta charset="UTF-8">
       <link rel="stylesheet" href="css/style.css" />
       <link rel="stylesheet" href="css/Home.css">
    </head>

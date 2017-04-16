@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <meta charset="utf-8">
+
       <title>View Records</title>
       <link rel="stylesheet" href="css/style.css" />
       <link rel="stylesheet" href="css/Home.css" />
@@ -34,18 +34,18 @@
       <p> </p>
       <?php
          $query = $_GET['query']; 
-         // takes value from search form
+         // takes value from search form in view.php
           
          $min_length = 1;
           
-         if(strlen($query) >= $min_length){ // if query length is more or equal minimum length then
+         if(strlen($query) >= $min_length){ // if query length is more or equal to minimum length then
               
              $result = mysql_query("SELECT * FROM new_record
                  WHERE (`id` LIKE '%".$query."%') OR (`name` LIKE '%".$query."%') OR (`age` LIKE '%".$query."%') OR (`position` LIKE '%".$query."%') OR (`club` LIKE '%".$query."%') OR (`dateofconcussion` LIKE '%".$query."%') OR (`refereename` LIKE '%".$query."%') OR (`submittedby` LIKE '%".$query."%') ORDER BY id desc") or die(mysql_error());
                // querying each row to see if it matches user search query   
             
              if(mysql_num_rows($result) > 0)
-             { // if one or more rows are returned do following
+             { // if one or more rows are returned, show table
          ?>
       <table class='styledtable' width=100%; border=1; style='border-collapse:collapse;'>
          <thead>

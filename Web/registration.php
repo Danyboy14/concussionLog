@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <meta charset="utf-8">
       <title>Registration</title>
       <link rel="stylesheet" href="css/style.css" />
       <link rel="stylesheet" href="css/Home.css" />
@@ -22,9 +21,7 @@
          if (isset($_REQUEST['username'])){
           if ($_REQUEST['email'] == $_REQUEST['emailconfirm'])
           {
-                 // removes backslashes
           $username = stripslashes($_REQUEST['username']);
-                 //escapes special characters in a string
           $username = mysqli_real_escape_string($con,$username); 
           $email = stripslashes($_REQUEST['email']);
           $email = mysqli_real_escape_string($con,$email);
@@ -36,7 +33,7 @@
                  $result = mysqli_query($con,$query);
                  if($result){
                      echo "<div class='insertForm'>
-         <h3>You are registered successfully.</h3>
+         <h3>You have been registered successfully.</h3>
          <br/>Click here to <a href='login.php'>Login</a></div>";
                  }
              }

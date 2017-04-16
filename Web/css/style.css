@@ -1,19 +1,9 @@
-body {
-     font-family:Arial, Sans-Serif;
-}
 .clearfix:before, .clearfix:after{
      content: "";
      display: table;
 }
 .clearfix:after{
      clear: both;
-}
-a{
-     color:#0067ab;
-     text-decoration:none;
-}
-a:hover{
-     text-decoration:underline;
 }
 .form{
      width: inherit;
@@ -36,20 +26,15 @@ input[type='password'] {
 input[type='submit']{
      padding: 10px 25px 8px;
      color: #fff;
-     background-color: #0067ab;
+     background-color: red;
      text-shadow: rgba(0,0,0,0.24) 0 1px 0;
      font-size: 16px;
      box-shadow: rgba(255,255,255,0.24) 0 2px 0 0 inset,#fff 0 1px 0 0;
-     border: 1px solid #0164a5;
+     border: 2px solid salmon;
      border-radius: 2px;
      margin-top: 10px;
      cursor:pointer;
 }
 input[type='submit']:hover {
      background-color: #024978;
-}
-
-a[type='grtplink']
-{
-     color: #fff;
 }
