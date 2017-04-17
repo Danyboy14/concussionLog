@@ -14,6 +14,9 @@
          <nav>
             <ul>
                <li>
+                  <a>Welcome <?php echo $_SESSION["username"]?>! </a>
+               </li>
+               <li>
                   <a href="dashboard.php">Dashboard</a>
                </li>
                <li>

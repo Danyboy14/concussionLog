@@ -24,6 +24,9 @@
       <nav>
          <ul>
             <li>
+               <a>Logged in as <?php echo $_SESSION["username"]?> </a>
+            </li>
+            <li>
                <a href="index2.php">Home</a>
             </li>
          </ul>

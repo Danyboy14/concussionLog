@@ -34,10 +34,16 @@ a:link, a:visited
 	text-decoration:underline;
 	color: red;
 }
- 
+
+a
+{
+	color: red;
+}
+
 a:hover
 {
 	text-decoration: none;
+	color: blue;
 }
  
 ul li
@@ -150,7 +156,7 @@ nav ul li a.last
 
 body img
 {
-		margin-left: 120px;
+	margin-left: 120px;
 }
 
 aside
@@ -214,5 +220,5 @@ input[type='submit']{
      cursor:pointer;
 }
 input[type='submit']:hover {
-     background-color: #024978;
+     background-color: salmon;
 }

@@ -30,11 +30,11 @@ input[type='submit']{
      text-shadow: rgba(0,0,0,0.24) 0 1px 0;
      font-size: 16px;
      box-shadow: rgba(255,255,255,0.24) 0 2px 0 0 inset,#fff 0 1px 0 0;
-     border: 2px solid salmon;
+     border: 1px solid red;
      border-radius: 2px;
      margin-top: 10px;
      cursor:pointer;
 }
 input[type='submit']:hover {
-     background-color: #024978;
+     background-color: salmon;
 }
