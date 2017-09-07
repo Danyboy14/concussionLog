@@ -1,8 +1,8 @@
 <?php
    require('db.php');
    include("auth.php");
-   mysql_connect("mysql11.000webhost.com","a3574765_Dan21","Danyboy14","a3574765_logins") or die("Error connecting to database: ".mysql_error());
-   mysql_select_db("a3574765_logins") or die(mysql_error());
+   mysql_connect("mysql11.000webhost.com","id2842415_dowen","Danyboy14","id2842415_concussionlog") or die("Error connecting to database: ".mysql_error());
+   mysql_select_db("id2842415_concussionlog") or die(mysql_error());
    ?>
 <!DOCTYPE html>
 <html>
