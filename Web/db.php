@@ -1,6 +1,6 @@
 <?php
    // Enter your Host, username, password, database below.
-   $con = mysqli_connect("mysql11.000webhost.com","id2842415_dowen","Danyboy14","id2842415_concussionlog");
+   $con = mysqli_connect("localhost","id2842415_dowen","Danyboy14","id2842415_concussionlog");
    // Check if error in connection
    if (mysqli_connect_errno())
    {
